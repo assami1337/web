@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div style="display: flex; justify-content: center;">
+    <button id="showPopup">Показать всплывающее окно</button>
+
+    <div id="overlay"></div>
+  
+    <div id="popup">
+      <button id="closePopup">x</button>
+      <h2>Модальное окно</h2>
+      <img src="https://sun9-25.userapi.com/impg/pSTJtwAlwpDEcS3KfCsTIOz9xzIrTTxVzfus7A/3vwsin8wdm4.jpg?size=1033x1080&quality=95&sign=4da57515e8d07c668a5951a58feb9fe8&type=album" style="width: 100px; height: 100px; margin: auto;">
+    </div>
+  </div>
+  <br/>
+  <div style="display: flex; justify-content: center;">
+    <div id="slider">
+      <div class="slide"><img src="https://sun9-9.userapi.com/impg/B1a_FCEeeU0oBRAW7Yc0G6OB5qTy5MMQWQH8iw/RKAaFKro2HI.jpg?size=671x674&quality=96&sign=a1829284d3201cca8e16f0b97a89122e&type=album" alt="Слайд 1"></div>
+      <div class="slide"><img src="https://sun9-33.userapi.com/impg/Lga2t67THL-i01ZjAfRWkmf9216KDrdJKZCXXw/HcFoJo0ugkE.jpg?size=1024x1024&quality=96&sign=44bd4fbc91d2d4403ef636f2630f287f&type=album" alt="Слайд 2"></div>
+      <div class="slide"><img src="https://sun9-7.userapi.com/impg/Gs5fZm6ip8LnKfHPM1_TVjH6Q6fORbgfRjRr7g/JFrhEmRtWNs.jpg?size=600x450&quality=96&sign=1a49515379c7e2caf5d5cb382d71c35c&type=album" alt="Слайд 3"></div>
+    </div>
+  </div>
+  <div style="display: flex; justify-content: center;">
+    <button id="prevSlide">Назад</button>
+    <button id="nextSlide">Вперед</button>
+  </div>
+  <br/>
+  <div style="display: flex; justify-content: center;">
+    <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Показать всплывающее окно</button>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" style="display: flex;">
+            <h5 class="modal-title" style="margin: auto;">Модальное окно</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="display: flex;">
+            <img src="https://sun9-25.userapi.com/impg/pSTJtwAlwpDEcS3KfCsTIOz9xzIrTTxVzfus7A/3vwsin8wdm4.jpg?size=1033x1080&quality=95&sign=4da57515e8d07c668a5951a58feb9fe8&type=album" style="width: 100px; height: 100px; margin: auto;" alt="Изображение">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; justify-content: center;">
+    <div class="slider-container">
+      <div class="slider1">
+        <div class="slider-item">
+          <img src="https://sun9-9.userapi.com/impg/B1a_FCEeeU0oBRAW7Yc0G6OB5qTy5MMQWQH8iw/RKAaFKro2HI.jpg?size=671x674&quality=96&sign=a1829284d3201cca8e16f0b97a89122e&type=album" alt="Slide 1">
+        </div>
+        <div class="slider-item">
+          <img src="https://sun9-33.userapi.com/impg/Lga2t67THL-i01ZjAfRWkmf9216KDrdJKZCXXw/HcFoJo0ugkE.jpg?size=1024x1024&quality=96&sign=44bd4fbc91d2d4403ef636f2630f287f&type=album" alt="Slide 2">
+        </div>
+        <div class="slider-item">
+          <img src="https://sun9-7.userapi.com/impg/Gs5fZm6ip8LnKfHPM1_TVjH6Q6fORbgfRjRr7g/JFrhEmRtWNs.jpg?size=600x450&quality=96&sign=1a49515379c7e2caf5d5cb382d71c35c&type=album" alt="Slide 3">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="display: flex; justify-content: center;">
+    <div class="slider-controls">
+      <button class="btn btn-primary prev-btn">Назад</button>
+      <button class="btn btn-primary next-btn">Вперед</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
